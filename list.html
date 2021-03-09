@@ -1,0 +1,1336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- My meta tags -->
+  <title>AKB24</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/dz.min.css">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/Favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/Favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/Favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/Favicon/site.webmanifest">
+  <link rel="mask-icon" href="./img/Favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Uikit CSS -->
+  <link rel="stylesheet" href="./css/uikit.min.css">
+  <!-- JQuery UI Slider -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+
+<body>
+
+  <div id="tagsFilter" uk-offcanvas="flip: true; overlay: true; stack: true">
+    <button class="uk-offcanvas-close tagsClose" type="button" uk-close></button>
+
+    <div class="uk-offcanvas-bar tagsFilter">
+
+      <div class="tagsFilter__head">Фильтр</div>
+
+      <div class="tagsFilter__body">
+
+        <div class="price">
+          <ul uk-accordion="multiple: true">
+            <li class="accordLi uk-open">
+              <a class="uk-accordion-title accordLi__title" href="#">Цена</a>
+              <div class="uk-accordion-content accordLi__content">
+
+                <div class="uk-grid-small" uk-grid>
+                  <div class="uk-width-1-2">
+                    <div class="uk-inline">
+                      <span class="uk-form-icon inputText">от</span>
+                      <input class="uk-input input" id="priceFrom" name="priceFrom" type="text" value="min value">
+                    </div>
+                  </div>
+
+                  <div class="uk-width-1-2">
+                    <div class="uk-inline">
+                      <span class="uk-form-icon inputText">до</span>
+                      <input class="uk-input input" id="priceTo" name="priceTo" type="text" value="max value">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="checkboxes">
+                  <div class="checkboxes__div">
+                    <input class="checkboxes__input" id="stock" name="stock" type="checkbox">
+                    <label class="checkboxes__label" for="stock">В наличии</label>
+                  </div>
+                  <div>
+                    <input class="checkboxes__input" id="today" name="today" type="checkbox">
+                    <label class="checkboxes__label" for="today">Получить сегодня</label>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="discount">
+          <div>
+            <input class="discount__input" id="discount" name="discount" type="checkbox">
+            <label class="discount__label" for="discount">Со скидкой продавца</label>
+          </div>
+        </div>
+
+        <div class="cashback">
+          <div>
+            <input class="cashback__input" id="cashback" name="cashback" type="checkbox">
+            <label class="cashback__label" for="cashback">С кешбеком</label>
+          </div>
+        </div>
+
+        <div class="brand">
+          <ul uk-accordion="multiple: true">
+            <li class="accordLi uk-open">
+              <a class="uk-accordion-title accordLi__title" href="#">Бренд</a>
+              <div class="uk-accordion-content accordLi__content">
+
+                <div class="brand__search">
+                  <div class="uk-inline brand__inputBlock">
+                    <button class="uk-form-icon uk-form-icon-flip brand__btn" type="submit"><i
+                        class="icon-search"></i></button>
+                    <input type="text" class="uk-input brand__searchInput">
+                  </div>
+                </div>
+
+                <div class="brand__content">
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                  <div class="brand__block">
+                    <input class="brand__input" id="brand" name="brand" type="checkbox">
+                    <label class="brand__label" for="brand">С кешбеком</label>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="mobileNav" class="mobileNavId" uk-offcanvas="overlay: true; stack: true">
+    <button class="uk-offcanvas-close mobileClose" type="button" uk-close></button>
+
+    <div class="uk-offcanvas-bar mobileNav">
+
+      <div class="logIn">
+        <div class="logIn__text">
+          Войдите, чтобы накапливать и использовать бонусные рубли. 
+        </div>
+        <a href="#" class="logIn__btn"><i class="icon-sign-in logIn__icon"></i> Войти</a>
+      </div>
+
+      <div class="categories">
+        <ul>
+          <li class="categories__li">
+            <a class="categories__link" href="#mobileCategory1" uk-toggle>Электроника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Электроника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Электроника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Электроника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Электроника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Электроника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Электроника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Электроника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Электроника</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <a href="#" class="footer__phone">+808080808</a>
+        <span class="footer__text">Режим работы с 8 до 22</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="mobileCategory1" class="mobileNavId" uk-offcanvas="overlay: true; stack: true">
+    <div class="uk-offcanvas-bar mobileNav">
+
+      <div class="header">
+        <a href="#" class="header__link uk-offcanvas-close" uk-close>
+          <i class="icon-angle-up header__icon"></i>
+          <span class="header__text">Электроника</span>
+        </a>
+      </div>
+
+      <div class="categories">
+        <ul>
+          <li class="categories__li">
+            <a class="categories__link" href="#mobileCategory1" uk-toggle>Бытовая техника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Бытовая техника</a>
+          </li>
+          <li class="categories__li">
+            <a class="categories__link" href="#">Бытовая техника</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="catalog" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar catalog">
+      <ul class="catalog__list">
+        <li class="catalog__liHead catalog__li">
+          <a href="/" class="catalog__link">Каталог</a>
+        </li>
+
+        <li class="catalog__li">
+          <a href="/" class="catalog__link">Электроника</a>
+          <div class="catalog__item"
+            uk-drop="pos: right-justify; boundary: #catalog .catalog__list; boundary-align: true">
+            <ul class="catalog__list">
+              <li class="catalog__liHead catalog__li">
+                <a href="/" class="catalog__link">Каталог</a>
+              </li>
+
+              <li class="catalog__li">
+                <a href="/" class="catalog__link">Электроника</a>
+                <div class="catalog__item" uk-drop="pos: right-justify; boundary: #catalog; boundary-align: true">
+                  test
+                </div>
+              </li>
+
+              <li class="catalog__li">
+                <a href="/" class="catalog__link">Бытовая техника</a>
+                <div class="catalog__item" uk-drop="pos: right-justify;">test</div>
+              </li>
+
+              <li class="catalog__li">
+                <a href="/" class="catalog__link">Детские товары</a>
+                <div class="catalog__item" uk-drop="pos: right-justify;">test</div>
+              </li>
+
+              <li class="catalog__li">
+                <a href="/" class="catalog__link">Продукты питания</a>
+                <div class="catalog__item" uk-drop="pos: right-justify;">test</div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="catalog__li">
+          <a href="/" class="catalog__link">Бытовая техника</a>
+          <div class="catalog__item" uk-drop="pos: right-justify; boundary: #catalog .catalog; boundary-align: true">
+            test</div>
+        </li>
+
+        <li class="catalog__li">
+          <a href="/" class="catalog__link">Детские товары</a>
+          <div class="catalog__item" uk-drop="pos: right-justify; boundary: #catalog .catalog; boundary-align: true">
+            test</div>
+        </li>
+
+        <li class="catalog__li">
+          <a href="/" class="catalog__link">Продукты питания</a>
+          <div class="catalog__item" uk-drop="pos: right-justify; boundary: #catalog .catalog; boundary-align: true">
+            test</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <header id="header">
+    <div id="section1">
+
+      <div class="uk-container">
+
+        <nav class="navbar" uk-navbar>
+          <div class="uk-navbar-left">
+
+            <div class="navbar__mobile uk-hidden@s">
+              <a class="uk-navbar-toggle navbar__mobileBtn" uk-navbar-toggle-icon uk-toggle href="#mobileNav"></a>
+            </div>
+
+            <div class="navbar__logo">
+              <a href="#" class="navbar__logoLink"><img class="navbar__logoImg" src="./img/logo.png" alt="AKB24"></a>
+            </div>
+
+            <div class="navbar__phone uk-visible@m">
+              <a href="tel:88006000888" class="navbar__phoneText">8 (800) 600-08-88</a>
+              <span class="navbar__phoneCity">Круглосуточно, без выходных</span>
+            </div>
+
+          </div>
+
+          <div class="uk-navbar-right uk-visible@s">
+            <ul class="uk-navbar-nav navbar__list">
+              <li class="navbar__navLi">
+                <a href="#" class="navbar__navLink">О компании</a>
+              </li>
+              <li class="navbar__navLi">
+                <a href="#" class="navbar__navLink">Оплата</a>
+              </li>
+              <li class="navbar__navLi">
+                <a href="#" class="navbar__navLink">Гарантии</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="uk-navbar-right uk-hidden@m">
+            <div>
+              <a href="#" class="navbar__mobileLink"><i class="icon-search"></i></a>
+              <div class="navbar__mobileSearch" uk-drop="mode: click; boundary: #section1; boundary-align: true; pos: bottom-justify">
+                <form action="">
+                  <a class="uk-form-icon uk-form-icon-flip navbar__searchBtn" id="navSearchClose" href="#">Отменить</a>
+                  <input class="uk-input navbar__searchInput" type="text">
+                </form>
+              </div>
+              <a href="#" class="navbar__mobileLink"><i class="icon-cart"></i></a>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+
+    </div>
+    <!-- /#section1 -->
+
+    <div id="section2" class="uk-visible@m" uk-sticky="media: @m">
+
+      <div class="uk-container">
+
+        <div class="searchBarContent">
+          <div class="searchBarCatalog">
+            <a href="#catalog" uk-toggle class="CatalogBtn uk-button uk-button-default"><span
+                class="CatalogBtn__icon"></span> Каталог</a>
+          </div>
+
+          <div class="searchBar">
+            <form action="#">
+              <div class="uk-inline">
+                <button class="uk-form-icon uk-form-icon-flip searchBar__btn" type="submit"><i
+                    class="icon-search searchBar__btnIcon"></i></button>
+                <input class="uk-input searchBar__input" type="text">
+              </div>
+            </form>
+          </div>
+
+          <div class="auth">
+
+            <div class="uk-button-group">
+              <a href="#" class="uk-button uk-button-default auth__btn auth__in">Войти</a>
+              <div class="uk-inline">
+                <a href="#" class="uk-button uk-button-default auth__btn auth__empty auth__cart" type="button"><i
+                    class="icon-cart auth__icon"></i>Корзина пуста</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /#section2 -->
+  </header>
+  <!-- /#header -->
+
+  <main id="main">
+    <div id="section3">
+
+      <div class="uk-container">
+        <div class="QueryTitle">
+          <h1 class="QueryTitle__text">Аккумуляторы автомобильные</h1>
+        </div>
+      </div>
+
+    </div>
+    <!-- /#section3 -->
+
+    <div id="section4">
+
+      <div class="toUp">
+        <a href="#header" class="toUp__btn" uk-scroll><i class="icon-angle-up toUp__icon"></i> Наверх</a>
+      </div>
+
+      <div class="uk-container">
+
+        <div uk-grid>
+          <div class="uk-width-1-4@m uk-visible@m">
+            <form class="aside">
+
+              <div class="aside__head">
+                <span class="aside__count">3902 товара</span>
+                <button type="submit" class="uk-button uk-button-default aside__btnReset uk-width-1-1 aside__btnDisable">Очистить
+                  фильтры</button>
+              </div>
+
+              <div class="aside__body">
+
+                <div class="AsideBlock">
+                  <ul uk-accordion="multiple: true">
+                    <li class="AsideBlock__accordeon uk-open">
+                      <a class="uk-accordion-title AsideBlock__accordeonTitle" href="#">Цена</a>
+                      <div class="uk-accordion-content AsideBlock__accordeonContent">
+
+                        <div class="uk-grid-small" uk-grid>
+                          <div class="uk-width-1-2@m">
+                            <div class="uk-inline">
+                              <span class="uk-form-icon AsideBlock__inputText">от</span>
+                              <input class="uk-input AsideBlock__input" id="priceFrom" name="priceFrom" type="text" value="min value">
+                            </div>
+                          </div>
+
+                          <div class="uk-width-1-2@m">
+                            <div class="uk-inline">
+                              <span class="uk-form-icon AsideBlock__inputText">до</span>
+                              <input class="uk-input AsideBlock__input" id="priceTo" name="priceTo" type="text" value="max value">
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="AsideBlock__sliderBlock">
+                          <div id="priceSlider" class="AsideBlock__sliderPrice"></div>
+                        </div>
+
+                        <div class="AsideBlock__checkboxesBlock">
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="stock" name="stock" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="stock">В наличии</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Получить сегодня</label>
+                          </div>
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="AsideBlock">
+                  <div class="AsideBlock__checkboxBlock">
+                    <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                    <label class="AsideBlock__checkboxLabel" for="today">Со скидкой продавца</label>
+                  </div>
+                </div>
+
+                <div class="AsideBlock">
+                  <div class="AsideBlock__checkboxBlock">
+                    <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                    <label class="AsideBlock__checkboxLabel" for="today">С кешбеком</label>
+                  </div>
+                </div>
+
+                <div class="AsideBlock">
+                  <ul uk-accordion="multiple: true">
+                    <li class="AsideBlock__accordeon uk-open">
+                      <a class="uk-accordion-title AsideBlock__accordeonTitle" href="#">Бренд</a>
+                      <div class="uk-accordion-content AsideBlock__accordeonContent">
+
+                        <div class="AsideBlock__search">
+                          <div class="uk-inline AsideBlock__searchBlock">
+                            <button class="uk-form-icon uk-form-icon-flip AsideBlock__searchBtn" type="submit"><i
+                                class="icon-search"></i></button>
+                            <input type="text" class="uk-input AsideBlock__searchInput">
+                          </div>
+                        </div>
+
+                        <div class="AsideBlock__scrollContent">
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                          <div class="AsideBlock__checkboxBlock">
+                            <input class="AsideBlock__checkboxInput" id="today" name="today" type="checkbox">
+                            <label class="AsideBlock__checkboxLabel" for="today">Reno</label>
+                          </div>
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+
+          <div class="uk-width-expand@m">
+            <div class="tagsHeader">
+
+              <div class="tagsHeader__head">
+                <a href="#" class="MiniBtn uk-button uk-button-default">12 вольт</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для Mazda CX5</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для Renault</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для Renault</a>
+                <a href="#" class="MiniBtn uk-button uk-button-default">для BMW</a>
+              </div>
+
+              <div class="tagsHeader__footer">
+
+                <div class="tagsHeader__mobile uk-hidden@m">
+
+                  <div class="tagsHeader__mobileCount">
+                    3902 товара
+                  </div>
+
+                  <div>
+                    <a href="#tagsFilter" class="tagsHeader__mobileBtn" uk-toggle><i class="icon-settings tagsHeader__mobileBtnIcon"></i> Фильтр</a>
+                  </div>
+
+                </div>
+
+                <div class="tagsHeaderContent">
+
+                  <div class="uk-inline">
+                    <button class="uk-button uk-button-default tagsHeader__filter" type="button" id="tagsHeaderFilter">
+                      <span class="tagsHeader__sortText">Сортировать: </span>
+                      <span class="tagsHeaderTag">по популярности</span>
+                      <i class="icon-angle-up tagsHeader__icon"></i>
+                    </button>
+                    <div uk-dropdown="mode: click" class="tagsHeader__dropdown">
+                      <ul class="tagsHeader__list">
+                        <li class="tagsHeader__li">Дешевые сверху</li>
+                        <li class="tagsHeader__li">Дорогие сверху</li>
+                        <li class="tagsHeader__li">Рейтинг по отзывам</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="tags__view uk-visible@m">
+                    <a href="#" class="tagsGridIcon tagsGridIconActive"><i class="icon-grid"></i></a>
+                    <a href="#" class="tagsGridIcon"><i class="icon-grid-list"></i></a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <!-- /.tags -->
+
+            <div class="productsMain">
+
+              <div class="ProductList">
+                <div class="ProductList__header">
+                  <span class="Product__badge" uk-tooltip="На этот товар начисляется дополнительный cashback">
+                    <img class="Product__badgeImg" src="./img/1eb1176a-0964-44b3-a941-577dbfd1c608.webp" alt="">
+                  </span>
+              
+                  <a style="display: flex; width: 100%; height: 100%" href="#">
+                    <img class="ProductList__img" src="./img/100024048979b0.webp" alt="">
+                  </a>
+                </div>
+              
+                <div class="ProductList__body">
+                  <div class="Product__description">
+                    <a href="#" class="Product__name">Аккумулятор автомобильный EXIDE EA640 64 Ач</a>
+                    <div class="Product__review">
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__unstar"></i>
+                      <span uk-tooltip="Количество отзывов">(10)</span>
+                    </div>
+                    <p class="Product__descriptionText">Емкость, в ампер часах: <span
+                        class="Product__descriptionCustom">64</span></p>
+                    <p class="Product__descriptionText">Пусковой ток, в амперах: <span
+                        class="Product__descriptionCustom">640</span></p>
+                    <p class="Product__descriptionText">Полярность: <span
+                        class="Product__descriptionCustom">обратная</span></p>
+                  </div>
+                </div>
+              
+                <div class="ProductList__footer">
+                  <div class="ProductList__price">
+                    <div class="ProductList__priceText">6 609 ₽</div>
+                    <div class="Product__priceFrom">от 6 609 ₽</div>
+                  </div>
+              
+                  <div class="ProductList__btn">
+                    <a href="#" class="Product__btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="ProductList">
+                <div class="ProductList__header">
+                  <span class="Product__badge" uk-tooltip="На этот товар начисляется дополнительный cashback">
+                    <img class="Product__badgeImg" src="./img/1eb1176a-0964-44b3-a941-577dbfd1c608.webp" alt="">
+                  </span>
+              
+                  <a style="display: flex; width: 100%; height: 100%" href="#">
+                    <img class="ProductList__img" src="./img/100024048979b0.webp" alt="">
+                  </a>
+                </div>
+              
+                <div class="ProductList__body">
+                  <div class="Product__description">
+                    <a href="#" class="Product__name">Аккумулятор автомобильный EXIDE EA640 64 Ач</a>
+                    <div class="Product__review">
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__unstar"></i>
+                      <span uk-tooltip="Количество отзывов">(10)</span>
+                    </div>
+                    <p class="Product__descriptionText">Емкость, в ампер часах: <span
+                        class="Product__descriptionCustom">64</span></p>
+                    <p class="Product__descriptionText">Пусковой ток, в амперах: <span
+                        class="Product__descriptionCustom">640</span></p>
+                    <p class="Product__descriptionText">Полярность: <span
+                        class="Product__descriptionCustom">обратная</span></p>
+                  </div>
+                </div>
+              
+                <div class="ProductList__footer">
+                  <div class="ProductList__price">
+                    <div class="ProductList__priceText">6 609 ₽</div>
+                    <div class="Product__priceFrom">от 6 609 ₽</div>
+                  </div>
+              
+                  <div class="ProductList__btn">
+                    <a href="#" class="Product__btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="ProductList">
+                <div class="ProductList__header">
+                  <span class="Product__badge" uk-tooltip="На этот товар начисляется дополнительный cashback">
+                    <img class="Product__badgeImg" src="./img/1eb1176a-0964-44b3-a941-577dbfd1c608.webp" alt="">
+                  </span>
+              
+                  <a style="display: flex; width: 100%; height: 100%" href="#">
+                    <img class="ProductList__img" src="./img/100024048979b0.webp" alt="">
+                  </a>
+                </div>
+              
+                <div class="ProductList__body">
+                  <div class="Product__description">
+                    <a href="#" class="Product__name">Аккумулятор автомобильный EXIDE EA640 64 Ач</a>
+                    <div class="Product__review">
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__unstar"></i>
+                      <span uk-tooltip="Количество отзывов">(10)</span>
+                    </div>
+                    <p class="Product__descriptionText">Емкость, в ампер часах: <span
+                        class="Product__descriptionCustom">64</span></p>
+                    <p class="Product__descriptionText">Пусковой ток, в амперах: <span
+                        class="Product__descriptionCustom">640</span></p>
+                    <p class="Product__descriptionText">Полярность: <span
+                        class="Product__descriptionCustom">обратная</span></p>
+                  </div>
+                </div>
+              
+                <div class="ProductList__footer">
+                  <div class="ProductList__price">
+                    <div class="ProductList__priceText">6 609 ₽</div>
+                    <div class="Product__priceFrom">от 6 609 ₽</div>
+                  </div>
+              
+                  <div class="ProductList__btn">
+                    <a href="#" class="Product__btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="ProductList">
+                <div class="ProductList__header">
+                  <span class="Product__badge" uk-tooltip="На этот товар начисляется дополнительный cashback">
+                    <img class="Product__badgeImg" src="./img/1eb1176a-0964-44b3-a941-577dbfd1c608.webp" alt="">
+                  </span>
+              
+                  <a style="display: flex; width: 100%; height: 100%" href="#">
+                    <img class="ProductList__img" src="./img/100024048979b0.webp" alt="">
+                  </a>
+                </div>
+              
+                <div class="ProductList__body">
+                  <div class="Product__description">
+                    <a href="#" class="Product__name">Аккумулятор автомобильный EXIDE EA640 64 Ач</a>
+                    <div class="Product__review">
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__unstar"></i>
+                      <span uk-tooltip="Количество отзывов">(10)</span>
+                    </div>
+                    <p class="Product__descriptionText">Емкость, в ампер часах: <span
+                        class="Product__descriptionCustom">64</span></p>
+                    <p class="Product__descriptionText">Пусковой ток, в амперах: <span
+                        class="Product__descriptionCustom">640</span></p>
+                    <p class="Product__descriptionText">Полярность: <span
+                        class="Product__descriptionCustom">обратная</span></p>
+                  </div>
+                </div>
+              
+                <div class="ProductList__footer">
+                  <div class="ProductList__price">
+                    <div class="ProductList__priceText">6 609 ₽</div>
+                    <div class="Product__priceFrom">от 6 609 ₽</div>
+                  </div>
+              
+                  <div class="ProductList__btn">
+                    <a href="#" class="Product__btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="ProductList">
+                <div class="ProductList__header">
+                  <span class="Product__badge" uk-tooltip="На этот товар начисляется дополнительный cashback">
+                    <img class="Product__badgeImg" src="./img/1eb1176a-0964-44b3-a941-577dbfd1c608.webp" alt="">
+                  </span>
+              
+                  <a style="display: flex; width: 100%; height: 100%" href="#">
+                    <img class="ProductList__img" src="./img/100024048979b0.webp" alt="">
+                  </a>
+                </div>
+              
+                <div class="ProductList__body">
+                  <div class="Product__description">
+                    <a href="#" class="Product__name">Аккумулятор автомобильный EXIDE EA640 64 Ач</a>
+                    <div class="Product__review">
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__unstar"></i>
+                      <span uk-tooltip="Количество отзывов">(10)</span>
+                    </div>
+                    <p class="Product__descriptionText">Емкость, в ампер часах: <span
+                        class="Product__descriptionCustom">64</span></p>
+                    <p class="Product__descriptionText">Пусковой ток, в амперах: <span
+                        class="Product__descriptionCustom">640</span></p>
+                    <p class="Product__descriptionText">Полярность: <span
+                        class="Product__descriptionCustom">обратная</span></p>
+                  </div>
+                </div>
+              
+                <div class="ProductList__footer">
+                  <div class="ProductList__price">
+                    <div class="ProductList__priceText">6 609 ₽</div>
+                    <div class="Product__priceFrom">от 6 609 ₽</div>
+                  </div>
+              
+                  <div class="ProductList__btn">
+                    <a href="#" class="Product__btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="ProductList">
+                <div class="ProductList__header">
+                  <span class="Product__badge" uk-tooltip="На этот товар начисляется дополнительный cashback">
+                    <img class="Product__badgeImg" src="./img/1eb1176a-0964-44b3-a941-577dbfd1c608.webp" alt="">
+                  </span>
+              
+                  <a style="display: flex; width: 100%; height: 100%" href="#">
+                    <img class="ProductList__img" src="./img/100024048979b0.webp" alt="">
+                  </a>
+                </div>
+              
+                <div class="ProductList__body">
+                  <div class="Product__description">
+                    <a href="#" class="Product__name">Аккумулятор автомобильный EXIDE EA640 64 Ач</a>
+                    <div class="Product__review">
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__unstar"></i>
+                      <span uk-tooltip="Количество отзывов">(10)</span>
+                    </div>
+                    <p class="Product__descriptionText">Емкость, в ампер часах: <span
+                        class="Product__descriptionCustom">64</span></p>
+                    <p class="Product__descriptionText">Пусковой ток, в амперах: <span
+                        class="Product__descriptionCustom">640</span></p>
+                    <p class="Product__descriptionText">Полярность: <span
+                        class="Product__descriptionCustom">обратная</span></p>
+                  </div>
+                </div>
+              
+                <div class="ProductList__footer">
+                  <div class="ProductList__price">
+                    <div class="ProductList__priceText">6 609 ₽</div>
+                    <div class="Product__priceFrom">от 6 609 ₽</div>
+                  </div>
+              
+                  <div class="ProductList__btn">
+                    <a href="#" class="Product__btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="ProductList">
+                <div class="ProductList__header">
+                  <span class="Product__badge" uk-tooltip="На этот товар начисляется дополнительный cashback">
+                    <img class="Product__badgeImg" src="./img/1eb1176a-0964-44b3-a941-577dbfd1c608.webp" alt="">
+                  </span>
+              
+                  <a style="display: flex; width: 100%; height: 100%" href="#">
+                    <img class="ProductList__img" src="./img/100024048979b0.webp" alt="">
+                  </a>
+                </div>
+              
+                <div class="ProductList__body">
+                  <div class="Product__description">
+                    <a href="#" class="Product__name">Аккумулятор автомобильный EXIDE EA640 64 Ач</a>
+                    <div class="Product__review">
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__unstar"></i>
+                      <span uk-tooltip="Количество отзывов">(10)</span>
+                    </div>
+                    <p class="Product__descriptionText">Емкость, в ампер часах: <span
+                        class="Product__descriptionCustom">64</span></p>
+                    <p class="Product__descriptionText">Пусковой ток, в амперах: <span
+                        class="Product__descriptionCustom">640</span></p>
+                    <p class="Product__descriptionText">Полярность: <span
+                        class="Product__descriptionCustom">обратная</span></p>
+                  </div>
+                </div>
+              
+                <div class="ProductList__footer">
+                  <div class="ProductList__price">
+                    <div class="ProductList__priceText">6 609 ₽</div>
+                    <div class="Product__priceFrom">от 6 609 ₽</div>
+                  </div>
+              
+                  <div class="ProductList__btn">
+                    <a href="#" class="Product__btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="ProductList">
+                <div class="ProductList__header">
+                  <span class="Product__badge" uk-tooltip="На этот товар начисляется дополнительный cashback">
+                    <img class="Product__badgeImg" src="./img/1eb1176a-0964-44b3-a941-577dbfd1c608.webp" alt="">
+                  </span>
+              
+                  <a style="display: flex; width: 100%; height: 100%" href="#">
+                    <img class="ProductList__img" src="./img/100024048979b0.webp" alt="">
+                  </a>
+                </div>
+              
+                <div class="ProductList__body">
+                  <div class="Product__description">
+                    <a href="#" class="Product__name">Аккумулятор автомобильный EXIDE EA640 64 Ач</a>
+                    <div class="Product__review">
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__star"></i>
+                      <i class="icon-star Product__unstar"></i>
+                      <span uk-tooltip="Количество отзывов">(10)</span>
+                    </div>
+                    <p class="Product__descriptionText">Емкость, в ампер часах: <span
+                        class="Product__descriptionCustom">64</span></p>
+                    <p class="Product__descriptionText">Пусковой ток, в амперах: <span
+                        class="Product__descriptionCustom">640</span></p>
+                    <p class="Product__descriptionText">Полярность: <span
+                        class="Product__descriptionCustom">обратная</span></p>
+                  </div>
+                </div>
+              
+                <div class="ProductList__footer">
+                  <div class="ProductList__price">
+                    <div class="ProductList__priceText">6 609 ₽</div>
+                    <div class="Product__priceFrom">от 6 609 ₽</div>
+                  </div>
+              
+                  <div class="ProductList__btn">
+                    <a href="#" class="Product__btn">Купить</a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- /.products -->
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /#section4 -->
+
+    <div id="section5" class="footerContainer">
+
+      <div class="uk-container">
+
+        <div class="SectionTitle">
+          <h1 class="SectionTitle__text">Подборки</h1>
+        </div>
+
+        <div class="SectionBody">
+          <a href="#" class="MiniBtn uk-button uk-button-default">12 вольт</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для Mazda CX5</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для ВАЗ</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для Renault</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для Renault</a>
+          <a href="#" class="MiniBtn uk-button uk-button-default">для BMW</a>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /#section5 -->
+
+    <div id="section6" class="footerContainer">
+
+      <div class="uk-container">
+
+        <div class="SectionTitle">
+          <h1 class="SectionTitle__text">Вы недавно смотрели</h1>
+        </div>
+
+        <div class="SectionBody">
+          <div class="SectionBody__queries">
+            <a href="#" class="MiniBtn uk-button uk-button-default">12 вольт</a>
+            <a href="#" class="MiniBtn uk-button uk-button-default">для Mazda CX5</a>
+          </div>
+          <div class="SectionBody__products">
+
+            <div class="" uk-slider>
+
+              <div class="uk-position-relative">
+
+                <div class="uk-slider-container">
+                  <ul class="uk-slider-items SectionBody__slider uk-child-width-1-1 uk-child-width-1-4@m uk-grid uk-grid-small">
+                    <li>
+                      <div class="ProductSlider">
+                        <div class="ProductSlider__image">
+                          <a href="#" class="ProductSlider__link">
+                            <img src="./img/100024048979b0.webp" alt="">
+                          </a>
+                        </div>
+                  
+                        <div class="ProductSlider__title">
+                          <a href="#" class="ProductSlider__name">Аккумуляторная батарея L3 70ah/720a, Аналог 7711238598 RENAULT</a>
+                          <span class="ProductSlider__price">7 551 ₽</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="ProductSlider">
+                        <div class="ProductSlider__image">
+                          <a href="#" class="ProductSlider__link">
+                            <img src="./img/100024048979b0.webp" alt="">
+                          </a>
+                        </div>
+                  
+                        <div class="ProductSlider__title">
+                          <a href="#" class="ProductSlider__name">Аккумуляторная батарея L3 70ah/720a, Аналог 7711238598 RENAULT</a>
+                          <span class="ProductSlider__price">7 551 ₽</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="ProductSlider">
+                        <div class="ProductSlider__image">
+                          <a href="#" class="ProductSlider__link">
+                            <img src="./img/100024048979b0.webp" alt="">
+                          </a>
+                        </div>
+                  
+                        <div class="ProductSlider__title">
+                          <a href="#" class="ProductSlider__name">Аккумуляторная батарея L3 70ah/720a, Аналог 7711238598 RENAULT</a>
+                          <span class="ProductSlider__price">7 551 ₽</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="ProductSlider">
+                        <div class="ProductSlider__image">
+                          <a href="#" class="ProductSlider__link">
+                            <img src="./img/100024048979b0.webp" alt="">
+                          </a>
+                        </div>
+                  
+                        <div class="ProductSlider__title">
+                          <a href="#" class="ProductSlider__name">Аккумуляторная батарея L3 70ah/720a, Аналог 7711238598 RENAULT</a>
+                          <span class="ProductSlider__price">7 551 ₽</span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="ProductSlider">
+                        <div class="ProductSlider__image">
+                          <a href="#" class="ProductSlider__link">
+                            <img src="./img/100024048979b0.webp" alt="">
+                          </a>
+                        </div>
+                  
+                        <div class="ProductSlider__title">
+                          <a href="#" class="ProductSlider__name">Аккумуляторная батарея L3 70ah/720a, Аналог 7711238598 RENAULT</a>
+                          <span class="ProductSlider__price">7 551 ₽</span>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="uk-position-top-right SectionBody__sliderNav">
+                  <div class="uk-button-group">
+                    <a href="#" class="uk-button uk-button-default SectionBody__sliderButton" uk-slider-item="previous">
+                      <i class="icon-angle-up SectionBody__sliderNavPrev"></i>
+                    </a>
+                    <a href="#" class="uk-button uk-button-default SectionBody__sliderButton" uk-slider-item="next">
+                      <i class="icon-angle-up SectionBody__sliderNavNext"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- /#section6 -->
+  </main>
+  <!-- /#main -->
+
+  <footer id="footer">
+    <div id="section7" class="footerContainer">
+  
+      <div class="uk-container">
+  
+        <div class="footerNav">
+  
+          <div class="footerNav__navigation">
+  
+            <ul class="footerNav__nav">
+              <li class="footerNav__navHead">
+                <span>Маркетплейс</span>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">О компании</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Контакты</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Вакансии</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Реквизиты</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Партнерская программа</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Настоящий маркетплейс</a>
+              </li>
+            </ul>
+  
+            <ul class="footerNav__nav">
+              <li class="footerNav__navHead">
+                <span>Маркетплейс</span>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">О компании</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Контакты</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Вакансии</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Реквизиты</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Партнерская программа</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Настоящий маркетплейс</a>
+              </li>
+            </ul>
+  
+            <ul class="footerNav__nav">
+              <li class="footerNav__navHead">
+                <span>Маркетплейс</span>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">О компании</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Контакты</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Вакансии</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Реквизиты</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Партнерская программа</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Настоящий маркетплейс</a>
+              </li>
+            </ul>
+  
+            <ul class="footerNav__nav">
+              <li class="footerNav__navHead">
+                <span>Маркетплейс</span>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">О компании</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Контакты</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Вакансии</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Реквизиты</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Партнерская программа</a>
+              </li>
+              <li class="footerNav__navLi">
+                <a href="#" class="footerNav__navLink">Настоящий маркетплейс</a>
+              </li>
+            </ul>
+  
+          </div>
+  
+        </div>
+  
+      </div>
+  
+    </div>
+    <!-- /#section7 -->
+  
+    <div id="section8">
+  
+      <div class="uk-container">
+  
+        <div class="workContent">
+          <div class="workPhone">
+            <p>Есть вопросы? Звоните! <a href="tel:8 (800) 600-08-88" class="workPhone__phone">8 (800) 600-08-88</a> Режим работы с 8 до 22 </p>
+          </div>
+  
+          <div class="workOrWrite">
+            <p>Или пишите!</p>
+            <a href="#" class="workViber">
+              <i class="icon-viber"></i>
+            </a>
+            <a href="#" class="workTelegram">
+              <i class="icon-telegram"></i>
+            </a>
+            <a href="#" class="workWhatsapp">
+              <i class="icon-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+    <!-- /#section8 -->
+  
+    <div id="section9">
+  
+      <div class="uk-container">
+  
+        <div class="footerLastContent">
+          <div class="footerLastCompany">
+            © 2016-2021 ООО «Маркетплейс» 
+          </div>
+  
+          <div class="footerLastLinks">
+            <a class="footerLastLink footerLastVk" href="#">
+              <i class="icon-vk"></i>
+            </a>
+            <a class="footerLastLink footerLastFacebook" href="#">
+              <i class="icon-facebook"></i>
+            </a>
+            <a class="footerLastLink footerLastOdnoklassniki" href="#">
+              <i class="icon-odnoklassniki"></i>
+            </a>
+            <a class="footerLastLink footerLastInstagram" href="#">
+              <i class="icon-instagram"></i>
+            </a>
+          </div>
+        </div>
+  
+      </div>
+  
+    </div>
+    <!-- /#section9 -->
+  </footer>
+  <!-- /#footer -->
+
+  <!-- Optional JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- JQuery UI Slider -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://atuin.ru/demo/ui-slider/jquery.ui.touch-punch.min.js"></script>
+  <!-- Uikit JavaScript -->
+  <script src="./js/uikit.min.js"></script>
+  <script src="./js/uikit-icons.min.js"></script>
+  <!-- My JavaScript -->
+  <script src="./js/dz.js"></script>
+  <script src="./js/AsideBlock__checkboxInput.js"></script>
+  <script src="./js/Catalog.js"></script>
+  <!-- Font-Awesome JavaScript -->
+
+</body>
+
+</html>
