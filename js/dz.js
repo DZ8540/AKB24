@@ -11,12 +11,14 @@ $('#tagsHeaderFilter').on('click blur', function() {
   $(this).toggleClass('tagsHeader__filterActive');
 });
 
-let tags = $('#section4 .tagsLi');
+let tags = $('#section4 .tagsHeader__li');
+$('#hiddenTag').val($('#section4 .tagsHeaderTag').text());
 $.each(tags, function(index, value) {
   $(value).on('click', function() {
     let tagValue = this.innerHTML;
-    $('#section4 .tagsTag').text(tagValue);
-    UIkit.dropdown('#section4 .tags__dropdown').hide(0);
+    $('#section4 .tagsHeaderTag').text(tagValue);
+    UIkit.dropdown('#section4 .tagsHeader__dropdown').hide(0);
+    $('#hiddenTag').val(tagValue);
   });
 });
 
